@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 import Poster from './Poster';
+import NavBar from './NavBar';
 
 class App extends Component {
   // in order to use this, we have to have constructor
@@ -65,6 +66,7 @@ class App extends Component {
     })
     return (
       <div className="container">
+        <NavBar />
         <div className="row center">
           <h1>The movie app... again</h1>
           <form onSubmit={this.movieSearch}>
